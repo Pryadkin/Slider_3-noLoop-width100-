@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.slider {
+  position: relative;
+  margin: auto;
+  height: 250px;
+  overflow: hidden;
+}
+.slider_wrapper {
+  display: flex;
+  position: relative;
+  height: 250px;
+  transition: 0.2s;
+}
+.slider_item {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+.slider_item div {
+  line-height: 250px;
+  font-size: 100px;
+  text-align: center;
+}
+.slider_control {
+  display: none;
+  position: absolute;
+  font-size: 50px;
+  text-decoration: none;
+  color: black;
+}
+.slider_control_right, .slider_control_left {
+  top: calc(50% - 25px);
+}
+.slider_control_right {
+  right: 0;
+}
+.slider_control_show {
+  display: block;
+}
